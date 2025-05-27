@@ -15,7 +15,7 @@
     </header>
   </div>
   <div class="actions">
-    <a href="#"><button type="button">Novo Cliente</button></a>
+    <a href="./cliente.php"><button type="button">Novo Cliente</button></a>
   </div>
   <table>
     <thead>

@@ -15,7 +15,7 @@
     $nome = $_GET["nome"];
     $endereco = $_GET["endereco"];
     $telefone = $_GET["telefone"];
-    $cpf = $_get['cpf'];
+    $cpf = $_GET['cpf'];
 
     require("./classecliente.php");
 

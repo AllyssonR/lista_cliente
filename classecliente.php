@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
 tabela cliente(ID_CLIENTE,NOME,TELEFONE,ENDERECO,CPF)
 CRUD
 Create -Insert
@@ -63,10 +63,10 @@ class cliente
   /**
    * Métodos:
    * C-inserirCliente($nome)
-   * 
+   *
    * R-listarClientes()
    * R-consultarCliente()
-   * 
+   *
    * alterarCliente($idCliente)
    * excluirCliente($idAluno)
    */
@@ -116,7 +116,8 @@ class cliente
   public function inserirClientes($nome, $telefone, $endereco, $cpf)
   {
     require("./conexaobd.php");
-    $comando = "INSERT INTO clientes(nome,telefone,endereco,cpf) VALUES(:nome,:telefone,:endereco,:cpf);";
+    $comando = "INSERT INTO clientes (nome, telefone, endereco, cpf)
+            VALUES (:nome, :telefone, :endereco, :cpf);";
     $stmt = $pdo->prepare($comando);
     $stmt->bindParam(":nome", $nome);
     $stmt->bindParam(":telefone", $telefone);

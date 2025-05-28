@@ -45,8 +45,8 @@
         echo "<td>$endereco</td>";
         echo "<td>$cpf</td>";
         echo "<td>";
-        echo "<a>Alterar</a>";
-        echo "<a>Excluir</a>";
+        echo "<a class='alterar' href='cliente.php?idCliente=$idCliente'>Alterar</a>";
+        echo "<a class='excluir' href='excluir.php?idCliente=$idCliente'>Excluir</a>";
         echo "</td>";
         echo "</tr>";
       }

@@ -156,10 +156,10 @@ class cliente
   public function excluirCliente($idCliente)
   {
     require("./conexaobd.php");
-    $comando = "DELETE FROM cliente WHERE id_cliente=:idAluno";
+    $comando = "DELETE FROM clientes WHERE id_cliente=:idCliente";
 
     $stmt = $pdo->prepare($comando);
-    $stmt->bindParam(":idAluno", $idCliente);
+    $stmt->bindParam(":idCliente", $idCliente);
     $stmt->execute();
     if ($stmt->rowCount() == 1) {
       $retorna = true;

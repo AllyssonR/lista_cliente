@@ -48,9 +48,24 @@ th,
 td {
   padding: 12px, 15px;
   text-align: left;
-  color:var(--caput-mortuum);
+  color: var(--caput-mortuum);
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #ddd;
+}
+td a {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+td a.alterar {
+  background-color: #6f4f38;
+  color: var(--linen);
+}
+td a.excluir{
+  background-color: #9C3D22 ;
+  color: var(--linen);
 }
 th {
   background-color: var(--caramel);

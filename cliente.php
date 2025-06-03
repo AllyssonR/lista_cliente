@@ -16,7 +16,7 @@
     </header>
     <form action="./salvar.php">
       <?php
-      $idCliente = isset($array['idCliente']) ? $array['idCliente'] : null;
+      $idCliente = $_GET["id_cliente"];
       $nome = "";
       $telefone = "";
       $endereco = "";
@@ -33,7 +33,7 @@
       }
       ?>
       <div class="form-group">
-        <input type="hidden" name="idCliente" value="<?php echo $idCliente ?>">
+        <input type="hidden" name="id_cliente" value="<?php echo $idCliente ?>">
         <label for="nome">Nome do Cliente</label>
         <input type="text" name="nome" id="nome" value="<?php echo $nome ?>" required>
         <label for="nome">telefone</label>

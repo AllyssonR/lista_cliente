@@ -21,10 +21,10 @@
 
 
     $cliente = new Cliente();
-    $mensagem="";
-   if ($idCliente == 0) {
+    $mensagem = "";
+    if ($idCliente == 0) {
       // INSERÇÃO - Novo cliente
-      if ($cliente->inserirClientes($nome,$telefone, $endereco, $cpf)) {
+      if ($cliente->inserirClientes($nome, $telefone, $endereco, $cpf)) {
         echo "<div class='alert alert-success'>";
         echo "<h3>✅ Sucesso!</h3>";
         echo "<p>Cliente cadastrado com sucesso!</p>";
@@ -37,7 +37,7 @@
       }
     } else {
       // ALTERAÇÃO - Cliente existente
-      if ($cliente->alterarCliente($idCliente, $nomem,$telefone, $endereco, $cpf)) {
+      if ($cliente->alterarCliente($idCliente, $nome, $telefone, $endereco, $cpf)) {
         echo "<div class='alert alert-success'>";
         echo "<h3>✅ Sucesso!</h3>";
         echo "<p>Dados do cliente alterados com sucesso!</p>";
@@ -49,6 +49,7 @@
         echo "</div>";
       }
     }
+    echo "<p>Clique <a href='index.php'>aqui</a> continuar </p>";
     ?>
   </div>
 </body>

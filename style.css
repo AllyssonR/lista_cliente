@@ -41,7 +41,8 @@ body {
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 5px;
   margin-top: 20px;
 }
 th,
@@ -52,6 +53,7 @@ td {
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #ddd;
 }
+
 td a {
   text-decoration: none;
   padding: 0.25rem 0.5rem;
@@ -62,10 +64,21 @@ td a {
 td a.alterar {
   background-color: #6f4f38;
   color: var(--linen);
+  margin-right: 1.25rem;
+  transition: 0.2s;
 }
-td a.excluir{
-  background-color: #9C3D22 ;
+td a.alterar:hover {
+  background-color: transparent;
+  color: #6f4f38;
+}
+td a.excluir {
+  background-color: #9c3d22;
   color: var(--linen);
+  transition: 0.2s;
+}
+td a.excluir:hover {
+  background-color: transparent;
+  color: #9c3d22;
 }
 th {
   background-color: var(--caramel);

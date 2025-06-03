@@ -136,10 +136,10 @@ class cliente
   public function alterarCliente($idCliente, $nome, $telefone, $endereco, $cpf)
   {
     require("./conexaobd.php");
-    $comando = "UPDATE clientes SET nome = :nome, telefone = :telefone, endereco = :endereco, cpf = :cpf WHERE id_cliente = :idCliente";
+    $comando = "UPDATE clientes SET nome = :nome, telefone = :telefone, endereco = :endereco, cpf = :cpf WHERE id_cliente = :id_cliente";
 
     $stmt = $pdo->prepare($comando);
-    $stmt->bindParam("id_cliente", $idCliente);
+    $stmt->bindParam(":id_cliente", $idCliente);
     $stmt->bindParam(":nome", $nome);
     $stmt->bindParam(":telefone", $telefone);
     $stmt->bindParam(":endereco", $endereco);

@@ -90,7 +90,7 @@ class cliente
       $retorna = false;
     } else {
       foreach ($stmt as $registro) {
-        $this->idCliente = $registro['idCliente'];
+        $this->idCliente = $registro['id_cliente'];
         $this->nome = $registro['nome'];
         $this->telefone = $registro['telefone'];
         $this->endereco = $registro['endereco'];

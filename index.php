@@ -15,7 +15,7 @@
     </header>
   </div>
   <div class="actions">
-    <a href="./cliente.php"><button type="button">Novo Cliente</button></a>
+    <a href="./cliente.php?id_cliente=0"><button type="button">Novo Cliente</button></a>
   </div>
   <table>
     <thead>
@@ -24,7 +24,7 @@
       <th>Telefone</th>
       <th>Endereço</th>
       <th>CPF</th>
-      <th>ALterar - Excluir</th>
+      <th>Alterar - Excluir</th>
     </thead>
     <tbody>
       <?php
@@ -45,8 +45,8 @@
         echo "<td>$endereco</td>";
         echo "<td>$cpf</td>";
         echo "<td>";
-        echo "<a class='alterar' href='cliente.php?idCliente=$idCliente'>Alterar</a>";
-        echo "<a class='excluir' href='excluir.php?idCliente=$idCliente'>Excluir</a>";
+        echo "<a class='alterar' href='cliente.php?id_cliente=$idCliente'>Alterar</a>";
+        echo "<a class='excluir' href='excluir.php?id_cliente=$idCliente'>Excluir</a>";
         echo "</td>";
         echo "</tr>";
       }

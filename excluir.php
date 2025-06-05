@@ -11,7 +11,7 @@
 <body>
   <div class="container">
     <?php
-    $idCliente = $_GET["idCliente"];
+    $idCliente = $_GET["id_cliente"];
     require("./classecliente.php");
     $cliente = new cliente();
     $mensagem = "";

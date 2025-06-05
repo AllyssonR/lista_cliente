@@ -33,6 +33,7 @@
       }
       ?>
       <div class="form-group">
+
         <input type="hidden" name="id_cliente" value="<?php echo $idCliente ?>">
         <label for="nome">Nome do Cliente</label>
         <input type="text" name="nome" id="nome" value="<?php echo $nome ?>" required>

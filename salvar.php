@@ -42,7 +42,12 @@
         echo "<h3>✅ Sucesso!</h3>";
         echo "<p>Dados do cliente alterados com sucesso!</p>";
         echo "</div>";
-      } else {
+      } else if ($idCliente = $idCliente || $nome = $nome || $telefone = $telefone || $endereco = $endereco || $cpf = $cpf) {
+        echo "<div class='alert alert-danger'>";
+        echo "<h3>❌ Erro!</h3>";
+        echo "<p>Dados repetidos. Nenhuma linha do banco de dados sera altera.</p>";
+        echo "</div>";
+      }else{
         echo "<div class='alert alert-danger'>";
         echo "<h3>❌ Erro!</h3>";
         echo "<p>Falha ao alterar os dados do cliente. Tente novamente.</p>";

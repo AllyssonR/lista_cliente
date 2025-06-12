@@ -9,12 +9,12 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
   background-color: var(--linen);
 }
 .container header {
   background-color: var(--caramel);
   padding: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: var(--linen);
 }
@@ -26,7 +26,6 @@ body {
   color: var(--caramel);
   background-color: var(--caput-mortuum);
   border-radius: 8px;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s;
@@ -50,7 +49,6 @@ td {
   padding: 12px, 15px;
   text-align: left;
   color: var(--caput-mortuum);
-  font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #ddd;
 }
 
@@ -92,4 +90,8 @@ tr:nth-child(even) {
 }
 tr:hover {
   background-color: #f1f1f1;
+}
+
+.group-buttons {
+  padding: 0.25rem 0;
 }

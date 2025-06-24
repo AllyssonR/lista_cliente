@@ -39,8 +39,10 @@ body {
 /* tabela*/
 
 table {
-  width: 100%;
+  width: 90%;
   border-collapse: separate;
+  margin-right: 3rem;
+  margin-left: 3rem;
   border-spacing: 0 5px;
   margin-top: 20px;
 }
@@ -78,6 +80,7 @@ td a.excluir:hover {
   background-color: transparent;
   color: #9c3d22;
 }
+
 th {
   background-color: var(--caramel);
 

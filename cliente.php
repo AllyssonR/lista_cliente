@@ -46,7 +46,7 @@
       </div>
       <div class="form-group">
 
-        <input type="submit" " value=" Salvar">
+        <input type="submit" value=" Salvar">
         <a href="./index.php"><button type="button">Voltar</button></a>
       </div>
     </form>
